@@ -152,7 +152,7 @@ resource "docker_container" "nginx" {
 }
 
 resource "docker_image" "nginx" {
-  name = "nginx:alpine"
+  name = "fofgaming/nginx:latest"
 }
 
 resource "docker_service" "fof-nginx" {
