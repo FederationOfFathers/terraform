@@ -19,3 +19,11 @@ variable "gcp_user" {
   description = "Username for SSH access on remote GCP compute instance"
   default = "cherian_benjamin_gmail_com"
 }
+
+variable "docker_remote_port" {
+  default = "2375"
+}
+
+data "http" "icanhazip" {
+  url = "http://icanhazip.com"
+}
